@@ -15,6 +15,7 @@
                 "scripts/virtualbox.sh",
                 "scripts/vmware.sh",
                 "scripts/vagrant.sh",
+                "scripts/bimserver.sh"
                 "scripts/dep.sh",
                 "scripts/cleanup.sh",
                 "scripts/zerodisk.sh"
