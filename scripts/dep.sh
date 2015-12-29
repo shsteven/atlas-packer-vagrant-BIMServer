@@ -9,13 +9,13 @@ apt-get -y install curl
 # You can install anything you need here.
 
 #	Install JRE 7 and some tools
-apt-get install openjdk-7-jre-headless wget unzip ntpdate
+apt-get install openjdk-7-jre-headless ntpdate
 
 ntpdate 0.nl.pool.ntp.org
 
 MY_DOMAIN = BCJ.COM
 
-##Install Tomcat7
+##Install Tomcat7 and user
 apt-get install tomcat7 tomcat7-user
 
 ## Setup tomcat7 directories
@@ -31,7 +31,7 @@ chown -R tomcat7 /var/bimserver
 #	Go to your domain folder
 cd /var/www/$MY_DOMAIN
 # Download the latest BIMserver (Make sure you replace this with the latest version!)
-wget https://github.com/opensourceBIM/BIMserver/releases/download/1.4.0-FINAL-2015-11-04/bimserver-1.4.0-FINAL-2015-11-04.war -O ROOT.war
+curl https://github.com/opensourceBIM/BIMserver/releases/download/1.4.0-FINAL-2015-11-04/bimserver-1.4.0-FINAL-2015-11-04.war -o ROOT.war
 
 # restart tomcat7
 service tomcat7 restart
