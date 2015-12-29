@@ -9,14 +9,17 @@ apt-get -y install curl
 # You can install anything you need here.
 
 #	Install JRE 7 and some tools
-apt-get install openjdk-7-jre-headless ntpdate
+apt-get install openjdk-7-jre-headless ntpdate adduser
 
 ntpdate 0.nl.pool.ntp.org
 
 MY_DOMAIN = BCJ.COM
 
-##Install Tomcat7 and user
-apt-get install tomcat7 tomcat7-user
+##Install Tomcat7
+apt-get install tomcat7
+
+#Create a tomcat7 user
+useradd -s /sbin/nologin tomcat7
 
 ## Setup tomcat7 directories
 #Create a directory for you domain
