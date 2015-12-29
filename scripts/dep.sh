@@ -37,4 +37,5 @@ cd /var/www/$MY_DOMAIN
 curl https://github.com/opensourceBIM/BIMserver/releases/download/1.4.0-FINAL-2015-11-04/bimserver-1.4.0-FINAL-2015-11-04.war -o ROOT.war
 
 # start tomcat7
-/etc/init.d/tomcat7 start
+#service tomcat7 restart
+#/etc/init.d/tomcat7 start
