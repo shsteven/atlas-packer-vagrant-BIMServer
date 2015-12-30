@@ -95,7 +95,7 @@ cd /var/www/BIM
 
 # Download the latest BIMserver (Make sure you replace this with the latest version!)
 wget https://github.com/opensourceBIM/BIMserver/releases/download/1.4.0-FINAL-2015-11-04/bimserver-1.4.0-FINAL-2015-11-04.war -O ROOT.war
-chown tomcat ROOT.war
+chown tomcat8 ROOT.war
 
 # start tomcat7
 service tomcat8 restart
