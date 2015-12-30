@@ -31,7 +31,7 @@ chown -R tomcat8 /var/bimserver	#Give the appropriate rights to the tomcat8 user
 # INSTALL TOMCAT8
 #
 cd /opt
-wget http://www.eu.apache.org/dist/tomcat/tomcat-8/v8.0.27/bin/apache-tomcat-8.0.27-deployer.zip -O tomcat8.zip
+wget http://www.eu.apache.org/dist/tomcat/tomcat-8/v8.0.30/bin/apache-tomcat-8.0.30-deployer.zip -O tomcat8.zip
 # * you can install and config tomcat8 using source code (tar.gz)
 #
 unzip tomcat8.zip
