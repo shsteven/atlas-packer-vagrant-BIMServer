@@ -43,9 +43,12 @@
             "disk_size": 20480,
             "guest_os_type": "Ubuntu_64",
             "http_directory": "http",
-            "iso_checksum": "af224223de99e2a730b67d7785b657f549be0d63221188e105445f75fb8305c9",
-            "iso_checksum_type": "sha256",
-            "iso_url": "http://releases.ubuntu.com/precise/ubuntu-12.04.5-server-amd64.iso",
+            "iso_urls": [
+              "http://releases.ubuntu.com/14.04/ubuntu-14.04-server-amd64.iso",
+              "http://nl.releases.ubuntu.com/14.04/ubuntu-14.04-server-amd64.iso"
+            ],
+            "iso_checksum": "01545fa976c8367b4f0d59169ac4866c",
+            "iso_checksum_type": "md5",
             "ssh_username": "vagrant",
             "ssh_password": "vagrant",
             "ssh_port": 22,
@@ -67,7 +70,7 @@
             "artifact_type": "vagrant.box",
             "metadata": {
                 "provider": "virtualbox",
-                "version": "0.0.7"
+                "version": "0.0.8"
             }
         }
     ]
