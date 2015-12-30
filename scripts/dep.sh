@@ -41,7 +41,7 @@ mkdir /opt/tomcat8/conf/policy.d
 # paste the following code
 echo """grant {
     permission java.security.AllPermission;
-  };""" vim /opt/tomcat8/conf/policy.d/default.policy
+  };""" > /opt/tomcat8/conf/policy.d/default.policy
 
 chown -R tomcat8 /opt/tomcat8
 
