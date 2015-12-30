@@ -49,8 +49,8 @@ chown -R tomcat8 /opt/tomcat8
 #
 # Change the port attribute in the Connector tag to the desired port (also see: “Running op ports below 1024”.
 
-echo '''<Host name="[Domain]" appBase="/var/www/[Domain]" unpackWARs="true" autoDeploy="true" xmlValidation="false" xmlNamespaceAware="false">
-     <Context path="" docBase="/var/www/[Domain]/ROOT.war">
+echo '''<Host name="BIM" appBase="/var/www/BIM" unpackWARs="true" autoDeploy="true" xmlValidation="false" xmlNamespaceAware="false">
+     <Context path="" docBase="/var/www/BIM/ROOT.war">
          <Parameter name="homedir" value="/var/bimserver/home"/>
      </Context>
 </Host>''' >> /opt/tomcat8/conf/server.xml
@@ -91,6 +91,7 @@ chmod +x /etc/init.d/tomcat8
 service tomcat8 restart
 
 
+cd /var/www/BIM
 
 # Download the latest BIMserver (Make sure you replace this with the latest version!)
 wget https://github.com/opensourceBIM/BIMserver/releases/download/1.4.0-FINAL-2015-11-04/bimserver-1.4.0-FINAL-2015-11-04.war -O ROOT.war
