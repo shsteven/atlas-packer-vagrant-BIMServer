@@ -31,9 +31,8 @@ chown -R tomcat8 /var/bimserver	#Give the appropriate rights to the tomcat8 user
 # INSTALL TOMCAT8
 #
 cd /opt
-wget http://www.eu.apache.org/dist/tomcat/tomcat-8/v8.0.30/bin/apache-tomcat-8.0.30-deployer.zip -O tomcat8.zip
-# * you can install and config tomcat8 using source code (tar.gz)
-#
+wget -nv http://www.eu.apache.org/dist/tomcat/tomcat-8/v8.0.30/bin/apache-tomcat-8.0.30.zip -O tomcat8.zip
+# * you can install and config tomcat8 using deployer
 unzip tomcat8.zip
 rm tomcat8.zip
 chmod +x /opt/tomcat8/bin/*.sh
@@ -84,7 +83,7 @@ echo '''<Host name="BIM" appBase="/var/www/BIM" unpackWARs="true" autoDeploy="tr
 # echo $JAVA_HOME
 
 # Get modified tomcat8 init.d script from GitHub gist
-wget https://gist.githubusercontent.com/dspeckhard/d0359929841ca7d20356/raw/8bd9ad14e1e3768f6872b678ce7c28a1f713a187/tomcat8 -O /etc/init.d/tomcat8
+wget -nv https://gist.githubusercontent.com/dspeckhard/d0359929841ca7d20356/raw/8bd9ad14e1e3768f6872b678ce7c28a1f713a187/tomcat8 -O /etc/init.d/tomcat8
 chmod +x /etc/init.d/tomcat8
 
 # Restart Tomcat:
@@ -94,7 +93,7 @@ service tomcat8 restart
 cd /var/www/BIM
 
 # Download the latest BIMserver (Make sure you replace this with the latest version!)
-wget https://github.com/opensourceBIM/BIMserver/releases/download/1.4.0-FINAL-2015-11-04/bimserver-1.4.0-FINAL-2015-11-04.war -O ROOT.war
+wget -nv https://github.com/opensourceBIM/BIMserver/releases/download/1.4.0-FINAL-2015-11-04/bimserver-1.4.0-FINAL-2015-11-04.war -O ROOT.war
 chown tomcat8 ROOT.war
 
 # start tomcat7
