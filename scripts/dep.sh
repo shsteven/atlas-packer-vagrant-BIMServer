@@ -35,7 +35,7 @@ wget -nv http://www.eu.apache.org/dist/tomcat/tomcat-8/v8.0.32/bin/apache-tomcat
 # * you can install and config tomcat8 using deployer
 unzip -q tomcat8.zip
 rm tomcat8.zip
-mv apache-tomcat-8.0.30 tomcat8
+mv apache-tomcat-8.0.32 tomcat8
 chmod +x /opt/tomcat8/bin/*.sh
 mkdir /opt/tomcat8/conf/policy.d
 # paste the following code
