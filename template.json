@@ -45,6 +45,7 @@
             "http_directory": "http",
             "iso_urls": [
               "http://releases.ubuntu.com/14.04/ubuntu-14.04.4-server-amd64.iso",
+			  "http://mirror.nus.edu.sg/ubuntu-ISO/14.04.4/ubuntu-14.04.4-desktop-amd64.iso",
               "http://nl.releases.ubuntu.com/14.04/ubuntu-14.04.4-server-amd64.iso"
             ],
             "iso_checksum": "2ac1f3e0de626e54d05065d6f549fa3a",
