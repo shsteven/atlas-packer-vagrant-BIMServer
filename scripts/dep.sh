@@ -18,9 +18,9 @@ dpkg-reconfigure -f noninteractive tzdata
 ntpdate 0.nl.pool.ntp.org
 
 #install java JRE from PPA
-sudo add-apt-repository ppa:openjdk-r/ppa
+sudo add-apt-repository ppa:openjdk-r/ppa -y
 sudo apt-get update
-sudo apt-get install openjdk-8-jre-headless
+sudo apt-get install openjdk-8-jre-headless -y
 
 # Create directories / users
 useradd -s /sbin/nologin tomcat8	#Create a tomcat8 user
